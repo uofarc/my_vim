@@ -75,7 +75,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-set nonu
+"set nonu
 
 
 " buffer switch hotkey
