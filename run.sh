@@ -1,5 +1,5 @@
 #/bin/bash
-cp .vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 mkdir -p  ~/.vim
 cp vimrc.vim ~/.vim/
 cp bundles.vim ~/.vim/
