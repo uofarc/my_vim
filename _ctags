@@ -1,0 +1,2 @@
+--python-kinds=-i
+#optional: --exclude=<partial names of bad files/directories>. e.g. --exclude=*/build/* to exclude all files inside 'build/' directories
