@@ -1,5 +1,6 @@
 #/bin/bash
 cp vimrc ~/.vimrc
+cp _ctags ~/.ctags
 mkdir -p  ~/.vim
 cp vimrc.vim ~/.vim/
 cp bundles.vim ~/.vim/
