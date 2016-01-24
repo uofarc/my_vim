@@ -228,6 +228,7 @@ cno <expr> $nt getcmdtype() = ':' ? NERDTree : '$nt'
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.swp$', '\.swo$', '\.git', '\.hg', '\.svn', '\.bzr']
 "let NERDTreeShowHidden = 1
 let NERDTreeShowBookmarks = 1
+let NERDTreeWinSize=20 
 
 
 
