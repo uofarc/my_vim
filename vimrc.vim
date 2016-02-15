@@ -1,3 +1,4 @@
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -26,13 +27,15 @@ nmap <leader>w :w!<cr>
 nmap <leader>t :set paste!<cr>
 
 " change file type
-nmap <leader>f :setlocal ff=unix<cr>
+nmap <leader>d :setlocal ff=unix<cr>
 
 " change file encoding
 nmap <leader>c :set fileencoding=utf-8<cr>
 
 " Fast editing of the .vimrc
 map <leader>e :e! ~/.vim_runtime/vimrc<cr>
+"  for 'ack -i' to finding "
+nmap <leader>f :Ack -i 
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
@@ -113,8 +116,8 @@ if has("gui_running")
     set background=dark
     colorscheme peaksea
 else
-    colorscheme zellner
-    "colorscheme Jellybeans
+    "colorscheme zellner
+    colorscheme Jellybeans
     "colorscheme vividchalk
     set background=dark
 
@@ -220,6 +223,7 @@ noremap <Leader>ms mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <F3> :NERDTreeToggle<CR>
+map <F4> :Ack<CR>
 "map <leader>nn :NERDTreeToggle<cr>
 "map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
@@ -541,4 +545,3 @@ endfunction
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 "autocmd FileType java set omnifunc=javacomplete#Complet
-

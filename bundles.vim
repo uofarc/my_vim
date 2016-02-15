@@ -1,8 +1,7 @@
 set nocompatible
 filetype off
 
-"set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -13,6 +12,7 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'klen/python-mode'
 Plugin 'bling/vim-airline'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'kien/ctrlp.vim'
 
 "-------------
 "" Other Utils
@@ -30,6 +30,13 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'gilesbowkett/ir_black'
 Plugin 'nathanaelkane/vim-indent-guides'
+
+
+"--------------
+" code helper
+"--------------
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mileszs/ack.vim'
 
 augroup vimrc_autocmds
     autocmd!
@@ -55,4 +62,3 @@ filetype plugin indent on
 " The rest of your config follows here
 
 ":PluginInstall
-
