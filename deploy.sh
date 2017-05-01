@@ -11,5 +11,6 @@
 brew install zsh
 brew install vim
 brew install git
-sudo chsh -s /bin/zsh cain
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+owner=`who am i | awk '{print $1}'`
+sudo chsh -s /bin/zsh $user
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
