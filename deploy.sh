@@ -7,6 +7,7 @@
 #sudo apt-get install tmux
 #sudo raspi-config
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install zsh
 brew install vim
 brew install git
