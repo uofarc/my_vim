@@ -37,6 +37,9 @@ map <leader>e :e! ~/.vim_runtime/vimrc<cr>
 "  for 'ack -i' to finding "
 nmap <leader>f :Ack -i 
 
+" for nerdtree open when f3 is not work
+nmap <leader>q :NERDTreeToggle<cr>
+
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
@@ -116,8 +119,8 @@ if has("gui_running")
     set background=dark
     colorscheme peaksea
 else
-    "colorscheme zellner
-    colorscheme Jellybeans
+    colorscheme zellner
+    "colorscheme Jellybeans
     "colorscheme vividchalk
     set background=dark
 
