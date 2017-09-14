@@ -548,3 +548,49 @@ endfunction
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 "autocmd FileType java set omnifunc=javacomplete#Complet
+
+
+""""""""""""""""""""""""""""""
+" => Set Ttile 
+"""""""""""""""""""""""""""""""
+func SetTitle()
+    if &filetype == 'sh'
+        call setline(1, "\#!/bin/sh")
+        call append(line("."), "\#****************************************************************#")
+        call append(line(".")+1, "\# ScriptName: ".expand("%") )
+        call append(line(".")+2, "\# Author: ".expand("uofa@qq.com") )
+        call append(line(".")+3, "\# Create Date: ".strftime("%F %R"))
+        call append(line(".")+4, "\# Modify Author: ".expand("cain") )
+        call append(line(".")+5, "\# Modify Date: ".strftime("%F %R"))
+        call append(line(".")+6, "\# Function: " )
+        call append(line(".")+7, "\#***************************************************************#")
+        call append(line(".")+8, "")
+        :8
+    elseif &filetype == 'perl'
+        call setline(1, "\#!/usr/bin/perl")
+        call append(line("."), "\#****************************************************************#")
+        call append(line(".")+1, "\# ScriptName: ".expand("%") )
+        call append(line(".")+2, "\# Author: ".expand("uofa@qq.com") )
+        call append(line(".")+3, "\# Create Date: ".strftime("%F %R"))
+        call append(line(".")+4, "\# Modify Author: ".expand("cain") )
+        call append(line(".")+5, "\# Modify Date: ".strftime("%F %R"))
+        call append(line(".")+6, "\# Function: ")
+        call append(line(".")+7, "\#***************************************************************#")
+        call append(line(".")+8, "")
+        :8
+    elseif &filetype == 'python'
+        call setline(1, "\#!/usr/bin/python")
+        call append(line("."), "\#****************************************************************#")
+        call append(line(".")+1, "\# ScriptName: ".expand("%") )
+        call append(line(".")+2, "\# Author: ".expand("uofa@qq.com") )
+        call append(line(".")+3, "\# Create Date: ".strftime("%F %R"))
+        call append(line(".")+4, "\# Modify Author: ".expand("cain") )
+        call append(line(".")+5, "\# Modify Date: ".strftime("%F %R"))
+        call append(line(".")+6, "\# Function: ")
+        call append(line(".")+7, "\#***************************************************************#")
+        call append(line(".")+8, "")
+        :8
+    endif
+endfunc
+
+autocmd BufNewFile *.sh,*.pl,*.py exec ":call SetTitle()"
