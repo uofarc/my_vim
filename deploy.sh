@@ -1,10 +1,17 @@
 #!/bin/bash
 
 #git clone https://github.com/uofarc/my_vim.git
-sudo apt-get install zsh
-sudo apt-get install vim
-sudo apt-get install git
-sudo apt-get install tmux
+if [ -f "/usr/bin/apt-get" ];then
+	sudo apt-get install zsh
+	sudo apt-get install vim
+	sudo apt-get install git
+	sudo apt-get install tmux
+else
+	sudo yum -y install zsh
+	sudo yum -y install vim
+	sudo yum -y install git
+	sudo yum -y install tmux
+fi
 #sudo raspi-config
 
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
