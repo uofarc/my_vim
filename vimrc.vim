@@ -40,6 +40,9 @@ nmap <leader>f :Ack -i
 " for nerdtree open when f3 is not work
 nmap <leader>q :NERDTreeToggle<cr>
 
+" for json format
+nmap <leader>j :%!python -m json.tool<cr>
+
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
